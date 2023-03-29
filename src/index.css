@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: #040714;
+  color: #f9f9f9;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --container-width-lg: 40%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
+  --container-width-ssm: 91%;
+}
+
+.container {
+  max-width: var(--container-width-lg);
+  margin: 0 auto;
+  padding: 2rem 4rem;
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  filter: drop-shadow(
+    (0 0 0 / 69%) 0px 26px 30px -10px,
+    rgb(0 0 0 / 73%) 0px 16px 10px -10px
+  );
+}
+
+a {
+  color: #f9f9f9;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.slick-slider {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 4rem;
+}
+
+.slick-slider{
+  margin: 4rem 0rem;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  opacity: 0;
+  height: 100%;
+  font-size: 4rem;
+  z-index: 1;
+}
+
+.slick-prev {
+  left: -6rem;
+}
+
+.slick-next {
+  right: -4rem;
+}
+
+.slick-dots li button:before {
+  font-size: 10px;
+  color: rgba(150, 158, 171, 0.679);
+  opacity: 1;
+}
+
+.slick-dots li.slick-active button:before {
+  color: whitesmoke;
+}
+
+.slick-list {
+  overflow: initial;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: var(--container-width-md);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    max-width: var(--container-width-sm);
+  }
+}
+@media screen and (max-width: 400px) {
+  .container {
+    max-width: var(--container-width-ssm);
+  }
+  nav {
+    padding: 0.2rem 4rem;
+  }
+  .nav__menu ul li {
+    display: none;
+  }
+}

@@ -1,0 +1,56 @@
+.big__container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/Images/login-background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: -99999999999999999;
+}
+
+.brand__image img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 2.2rem;
+}
+
+.brand__image2 img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 2.2rem;
+}
+
+.loginButton a {
+  display: block;
+  font-size: bold;
+  margin-bottom: 2.2rem;
+  width: 100%;
+  padding: 2rem 0;
+  font-size: 2rem;
+  color: #f9f9f9;
+  background-color: #0054c3;
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
+  letter-spacing: 0.3rem;
+  cursor: pointer;
+}
+
+.loginButton a:hover {
+  background-color: #0483ee;
+  border: 1px solid #0483ee;
+}
+
+.loginButton p {
+  font-size: 1.6rem;
+  color: hsla(0, 1%, 95.3%, 1);
+  margin-bottom: 2.2rem;
+  letter-spacing: 0.1rem;
+  line-height: 2.7rem;
+}
