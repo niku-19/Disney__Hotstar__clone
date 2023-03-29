@@ -12,7 +12,7 @@ import { setMovies } from "../../Features/MovieSlice";
 import db from "../../firebase";
 
 const Home = () => {
-  const userName =  useSelector(state => console.log(state.user.name) )
+  const userName = useSelector((state) => state.user.name);
   const dispatch = useDispatch();
   let Recommendeds = [];
   let ContinueWatchings = [];
