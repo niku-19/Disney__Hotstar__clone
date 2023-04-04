@@ -52,7 +52,7 @@ const Home = () => {
         })
       );
     });
-  }, [userName]);
+  }, []);
 
   return (
     <>

@@ -13,11 +13,11 @@ const movieSlice = createSlice({
   initialState,
   reducers: {
     setMovies: (state, action) => {
-      state.ContinueWatching = [...state.ContinueWatching, ...action.payload.ContinueWatching];
-      state.NewDisney = [...state.NewDisney, ...action.payload.NewDisney];
-      state.Original = [...state.Original, ...action.payload.Original];
-      state.Trending = [...state.Trending, ...action.payload.Trending];
-      state.Recommended = [...state.Recommended, ...action.payload.Recommended];
+      state.ContinueWatching = action.payload.ContinueWatching;
+      state.NewDisney = action.payload.NewDisney;
+      state.Original = action.payload.Original;
+      state.Trending = action.payload.Trending;
+      state.Recommended = action.payload.Recommended;
     },
   },
 });

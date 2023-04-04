@@ -46,7 +46,10 @@ const Header = () => {
         <div className={style.left__side__nav}>
           <div className={style.logo}>
             <Link to="/home">
-              <img src="/Images/logo.svg" alt="brand__logo" /> <span>hotstar</span>
+              <div className={style.logo__container}>
+              <img src="/Images/logo.svg" alt="brand__logo" /> 
+              <div>hotstar</div>
+              </div>
             </Link>
           </div>
           {user.isVerfied ? (

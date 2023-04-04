@@ -5,7 +5,6 @@ import style from "./Details.module.css";
 
 const Detail = (props) => {
   const { id } = useParams();
-  console.log("🚀 ~ file: Details.jsx:8 ~ Detail ~ id:", id);
   const [detailData, setDetailData] = useState({});
   const [playVideo, setPlayVideo] = useState(false);
 
@@ -59,10 +58,10 @@ const Detail = (props) => {
 
       <div className={style.inside__container}>
         <div className={style.controls}>
-          <button onClick={handlePlay}>
+          <a onClick={handlePlay}>
             <img src="/Images/play-icon-black.png" alt="" />
-            <span>{playVideo ? "stop" : "play"}</span>
-          </button>
+            <div>{playVideo ? "stop" : "play"}</div>
+          </a>
           <div className={style.addList}>
             <span />
             <span />
